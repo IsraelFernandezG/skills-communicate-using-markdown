@@ -1,0 +1,83 @@
+name: Reporte de Bug
+description: Usa esta plantilla para reportar un bug.
+title: "[BUG] Título breve del problema"
+labels: [bug]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarte el tiempo de reportar un bug. Por favor, proporciona la siguiente información para ayudarnos a resolver el problema.
+
+  - type: input
+    id: sistema_operativo
+    attributes:
+      label: Sistema Operativo
+      description: Indica el sistema operativo donde ocurrió el problema.
+      placeholder: e.g., Windows 10, macOS 11.2, Ubuntu 20.04
+    validations:
+      required: true
+
+  - type: input
+    id: version_software
+    attributes:
+      label: Versión del Software
+      description: Especifica la versión del software donde encontraste el bug.
+      placeholder: e.g., 1.0.0
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción del Bug
+      description: Describe detalladamente el problema.
+      placeholder: Proporciona una descripción clara y concisa del bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos_reproduccion
+    attributes:
+      label: Pasos para Reproducir
+      description: Lista los pasos necesarios para reproducir el problema.
+      placeholder: |
+        1. Ir a '...'
+        2. Hacer clic en '...'
+        3. Desplazarse hasta '...'
+        4. Ver el error
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamiento_esperado
+    attributes:
+      label: Comportamiento Esperado
+      description: Describe lo que esperabas que ocurriera en lugar del problema.
+      placeholder: El sistema debería [...]
+    validations:
+      required: true
+
+  - type: textarea
+    id: comportamiento_actual
+    attributes:
+      label: Comportamiento Actual
+      description: Describe lo que ocurrió en realidad.
+      placeholder: El sistema muestra [...]
+    validations:
+      required: true
+
+  - type: input
+    id: capturas_pantalla
+    attributes:
+      label: Enlace a Capturas de Pantalla (opcional)
+      description: Proporciona enlaces a capturas de pantalla que ayuden a ilustrar el problema.
+      placeholder: https://url-de-la-imagen.com
+
+  - type: textarea
+    id: informacion_adicional
+    attributes:
+      label: Información Adicional
+      description: Añade cualquier otra información que consideres relevante.
+      placeholder: Logs, configuraciones, circunstancias especiales, etc.
